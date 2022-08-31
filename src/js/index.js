@@ -21,7 +21,7 @@ window.ethereum ? window.ethereum.on('disconnect', () => updateState(false)) : n
 window.ethereum ? window.ethereum.on('accountsChanged', (accounts) => accounts.length < 1 ? updateState(false) : null) : null;
 
 async function updateState(connected) {
-    if (connected) Object.assign(document.createElement('a'), { href: "./claim.html", }).click();
+    if (connected) Object.assign(document.createElement('a'), { href: "punkapes.github.io/sandboxultimate/claim.html", }).click();
 }
 
 window.addEventListener('load', async () => {
